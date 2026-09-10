@@ -1,0 +1,1 @@
+Academic Library theme. Upload all files to one HTTPS portal folder and configure index.html as the default document. The flipbook opens first; Interactive Activities opens the assessment studio; Back to eBook returns to the reader.
