@@ -1,154 +1,64 @@
 [
-  {
-    "id": "CH1-Q001",
-    "chapter": 1,
-    "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Definition",
-    "page": "9–10",
-    "difficulty": "Easy",
-    "type": "mcq",
-    "question": "Which description best defines a distributed system?",
-    "options": [
-      "Computers that never communicate",
-      "One database on one server",
-      "Independent computers communicating and coordinating toward a common goal",
-      "One multicore computer"
-    ],
-    "answer": 2,
-    "explanation": "Independent computers communicating and coordinating toward a common goal. This is the concept presented in the cited ebook section.",
-    "source": "Distributed_ebook_2025a.pdf"
-  },
-  {
-    "id": "CH1-Q002",
-    "chapter": 1,
-    "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Vertical Scaling",
-    "page": "12",
-    "difficulty": "Medium",
-    "type": "mcq",
-    "question": "Which change is vertical scaling?",
-    "options": [
-      "Adding a load balancer",
-      "Adding CPU and RAM to one server",
-      "Adding four servers",
-      "Replicating data across regions"
-    ],
-    "answer": 1,
-    "explanation": "Adding CPU and RAM to one server. This is the concept presented in the cited ebook section.",
-    "source": "Distributed_ebook_2025a.pdf"
-  },
-  {
-    "id": "CH1-Q003",
-    "chapter": 1,
-    "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Vertical Scaling",
-    "page": "12",
-    "difficulty": "Hard",
-    "type": "mcq",
-    "question": "What is a main limitation of vertical scaling?",
-    "options": [
-      "A physical ceiling and a possible single point of failure",
-      "It always requires partitioning",
-      "It prevents hardware upgrades",
-      "It guarantees availability"
-    ],
-    "answer": 0,
-    "explanation": "A physical ceiling and a possible single point of failure. This is the concept presented in the cited ebook section.",
-    "source": "Distributed_ebook_2025a.pdf"
-  },
-  {
-    "id": "CH1-Q004",
-    "chapter": 1,
-    "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Horizontal Scaling",
-    "page": "12",
-    "difficulty": "Easy",
-    "type": "mcq",
-    "question": "What is horizontal scaling?",
-    "options": [
-      "Increasing one CPU's speed",
-      "Using shared physical memory",
-      "Removing replicas",
-      "Adding machines and distributing workload among them"
-    ],
-    "answer": 3,
-    "explanation": "Adding machines and distributing workload among them. This is the concept presented in the cited ebook section.",
-    "source": "Distributed_ebook_2025a.pdf"
-  },
-  {
-    "id": "CH1-Q005",
-    "chapter": 1,
-    "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Core Features",
-    "page": "13",
-    "difficulty": "Medium",
-    "type": "mcq",
-    "question": "Why do distributed nodes use message passing?",
-    "options": [
-      "Messages prevent failures",
-      "Each node has independent physical memory",
-      "Every node shares all variables",
-      "Messages create a global clock"
-    ],
-    "answer": 1,
-    "explanation": "Each node has independent physical memory. This is the concept presented in the cited ebook section.",
-    "source": "Distributed_ebook_2025a.pdf"
-  },
-  {
-    "id": "CH1-Q006",
-    "chapter": 1,
-    "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Physical Clocks",
-    "page": "13",
-    "difficulty": "Hard",
-    "type": "mcq",
-    "question": "Why is event ordering difficult in a distributed system?",
-    "options": [
-      "Memory is always shared",
-      "Messages arrive instantly",
-      "Local clocks drift and network delay varies",
-      "Every node uses one hardware clock"
-    ],
-    "answer": 2,
-    "explanation": "Local clocks drift and network delay varies. This is the concept presented in the cited ebook section.",
-    "source": "Distributed_ebook_2025a.pdf"
-  },
-  {
-    "id": "CH1-Q007",
-    "chapter": 1,
-    "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Parallel vs Distributed",
-    "page": "14–15",
-    "difficulty": "Easy",
-    "type": "mcq",
-    "question": "Which feature is typical of a distributed system?",
-    "options": [
-      "Independent memory connected through network messages",
-      "One shared physical memory only",
-      "One global hardware clock",
-      "All processors in one machine"
-    ],
-    "answer": 0,
-    "explanation": "Independent memory connected through network messages. This is the concept presented in the cited ebook section.",
-    "source": "Distributed_ebook_2025a.pdf"
-  },
-  {
-    "id": "CH1-Q008",
-    "chapter": 1,
-    "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Netflix Case Study",
-    "page": "16",
-    "difficulty": "Medium",
-    "type": "mcq",
-    "question": "How does Netflix reduce playback latency?",
-    "options": [
-      "It uses one worldwide server",
-      "It removes replicas",
-      "It waits for every service before playback",
-      "It serves content from a nearby location"
-    ],
-    "answer": 3,
-    "explanation": "It serves content from a nearby location. This is the concept presented in the cited ebook section.",
-    "source": "Distributed_ebook_2025a.pdf"
-  }
+{"id":"CH1-Q001","chapter":1,"chapterTitle":"Introduction to Distributed Systems","topic":"Definition","page":"9–10","difficulty":"Easy","type":"mcq","question":"Which description best defines a distributed system?","options":["Computers that never communicate","One database on one server","Independent computers communicating and coordinating toward a common goal","One multicore computer"],"answer":2,"explanation":"Independent computers communicating and coordinating toward a common goal. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH1-Q002","chapter":1,"chapterTitle":"Introduction to Distributed Systems","topic":"Vertical Scaling","page":"12","difficulty":"Medium","type":"mcq","question":"Which change is vertical scaling?","options":["Adding a load balancer","Adding CPU and RAM to one server","Adding four servers","Replicating data across regions"],"answer":1,"explanation":"Adding CPU and RAM to one server. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH1-Q003","chapter":1,"chapterTitle":"Introduction to Distributed Systems","topic":"Vertical Scaling","page":"12","difficulty":"Hard","type":"mcq","question":"What is a main limitation of vertical scaling?","options":["A physical ceiling and a possible single point of failure","It always requires partitioning","It prevents hardware upgrades","It guarantees availability"],"answer":0,"explanation":"A physical ceiling and a possible single point of failure. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH1-Q004","chapter":1,"chapterTitle":"Introduction to Distributed Systems","topic":"Horizontal Scaling","page":"12","difficulty":"Easy","type":"mcq","question":"What is horizontal scaling?","options":["Increasing one CPU's speed","Using shared physical memory","Removing replicas","Adding machines and distributing workload among them"],"answer":3,"explanation":"Adding machines and distributing workload among them. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH1-Q005","chapter":1,"chapterTitle":"Introduction to Distributed Systems","topic":"Core Features","page":"13","difficulty":"Medium","type":"mcq","question":"Why do distributed nodes use message passing?","options":["Messages create a global clock","Messages prevent failures","Each node has independent physical memory","Every node shares all variables"],"answer":2,"explanation":"Each node has independent physical memory. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH1-Q006","chapter":1,"chapterTitle":"Introduction to Distributed Systems","topic":"Physical Clocks","page":"13","difficulty":"Hard","type":"mcq","question":"Why is event ordering difficult in a distributed system?","options":["Messages arrive instantly","Local clocks drift and network delay varies","Every node uses one hardware clock","Memory is always shared"],"answer":1,"explanation":"Local clocks drift and network delay varies. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH1-Q007","chapter":1,"chapterTitle":"Introduction to Distributed Systems","topic":"Parallel vs Distributed","page":"14–15","difficulty":"Easy","type":"mcq","question":"Which feature is typical of a distributed system?","options":["Independent memory connected through network messages","One shared physical memory only","One global hardware clock","All processors in one machine"],"answer":0,"explanation":"Independent memory connected through network messages. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH1-Q008","chapter":1,"chapterTitle":"Introduction to Distributed Systems","topic":"Netflix Case Study","page":"16","difficulty":"Medium","type":"mcq","question":"How does Netflix reduce playback latency?","options":["It uses one worldwide server","It removes replicas","It waits for every service before playback","It serves content from a nearby location"],"answer":3,"explanation":"It serves content from a nearby location. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+
+{"id":"CH2-Q001","chapter":2,"chapterTitle":"Communication Paradigms","topic":"Communicating Entities","page":"21–22","difficulty":"Easy","type":"mcq","question":"Which is a system-oriented communicating entity?","options":["A database column","A process, thread, or node","A cache policy","A domain name only"],"answer":1,"explanation":"A process, thread, or node. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH2-Q002","chapter":2,"chapterTitle":"Communication Paradigms","topic":"Middleware","page":"22–24","difficulty":"Medium","type":"mcq","question":"Where does middleware conceptually reside?","options":["Between distributed applications and lower system services","Only in CPU cache","Below the physical medium","Only in a database"],"answer":0,"explanation":"Between distributed applications and lower system services. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH2-Q003","chapter":2,"chapterTitle":"Communication Paradigms","topic":"Remote Invocation","page":"24","difficulty":"Hard","type":"mcq","question":"What is the goal of remote invocation?","options":["Access remote physical memory directly","Guarantee zero latency","Prevent every network failure","Invoke remote functionality through a local-like interface"],"answer":3,"explanation":"Invoke remote functionality through a local-like interface. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH2-Q004","chapter":2,"chapterTitle":"Communication Paradigms","topic":"RPC","page":"25","difficulty":"Easy","type":"mcq","question":"What does an RPC client stub do?","options":["Synchronizes all clocks","Writes into server memory","Marshals the operation and arguments into a request","Runs the server procedure locally"],"answer":2,"explanation":"Marshals the operation and arguments into a request. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH2-Q005","chapter":2,"chapterTitle":"Communication Paradigms","topic":"RPC","page":"26","difficulty":"Medium","type":"mcq","question":"What does an RPC server stub do?","options":["Elects a coordinator","Unmarshals the request, invokes the procedure, and marshals the result","Builds the user interface","Chooses cache eviction"],"answer":1,"explanation":"Unmarshals the request, invokes the procedure, and marshals the result. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH2-Q006","chapter":2,"chapterTitle":"Communication Paradigms","topic":"Marshalling","page":"26","difficulty":"Hard","type":"mcq","question":"Why is marshalling required?","options":["Data must be converted into a transferable representation","It elects a leader","It creates shared memory","It removes all representation differences automatically"],"answer":0,"explanation":"Data must be converted into a transferable representation. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH2-Q007","chapter":2,"chapterTitle":"Communication Paradigms","topic":"Failure Independence","page":"27","difficulty":"Easy","type":"mcq","question":"Why can a blind retry after a timeout be dangerous?","options":["A timeout proves nothing executed","The retry becomes local","The client and server share fate","The operation may already have succeeded and be duplicated"],"answer":3,"explanation":"The operation may already have succeeded and be duplicated. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH2-Q008","chapter":2,"chapterTitle":"Communication Paradigms","topic":"RMI","page":"32","difficulty":"Medium","type":"mcq","question":"What does RMI add to procedural RPC?","options":["A perfect global clock","Cache replacement","Remote objects, references, and method calls","Shared physical memory"],"answer":2,"explanation":"Remote objects, references, and method calls. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+
+{"id":"CH3-Q001","chapter":3,"chapterTitle":"Architecture Models","topic":"Architecture Dimensions","page":"41–42","difficulty":"Easy","type":"mcq","question":"Which dimensions characterize architecture in the book?","options":["Entities, communication paradigms, and roles or responsibilities","CPU, disk, and screen","Only clients and servers","Names, clocks, and caches only"],"answer":0,"explanation":"Entities, communication paradigms, and roles or responsibilities. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH3-Q002","chapter":3,"chapterTitle":"Architecture Models","topic":"Master-Worker","page":"42","difficulty":"Medium","type":"mcq","question":"What is a drawback of master-worker architecture?","options":["Workers cannot execute tasks","It has no coordination","It is always decentralized","The master can be a bottleneck and single point of failure"],"answer":3,"explanation":"The master can be a bottleneck and single point of failure. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH3-Q003","chapter":3,"chapterTitle":"Architecture Models","topic":"Peer-to-Peer","page":"43","difficulty":"Hard","type":"mcq","question":"What distinguishes peer-to-peer architecture?","options":["All data is on a master","Peers share physical memory","Each peer can act as both client and server","Only one node answers requests"],"answer":2,"explanation":"Each peer can act as both client and server. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH3-Q004","chapter":3,"chapterTitle":"Architecture Models","topic":"Unstructured P2P","page":"43","difficulty":"Easy","type":"mcq","question":"How does unstructured P2P commonly locate data?","options":["A three-tier server","Flooding or random-walk queries","A deterministic DHT lookup","One central database only"],"answer":1,"explanation":"Flooding or random-walk queries. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH3-Q005","chapter":3,"chapterTitle":"Architecture Models","topic":"Structured P2P","page":"43","difficulty":"Medium","type":"mcq","question":"What supports efficient lookup in structured P2P?","options":["A distributed hash table","A global shared variable","One file server","A FIFO cache"],"answer":0,"explanation":"A distributed hash table. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH3-Q006","chapter":3,"chapterTitle":"Architecture Models","topic":"Hybrid P2P","page":"44","difficulty":"Hard","type":"mcq","question":"What can a central element do in hybrid P2P?","options":["Store every transferred byte","Provide shared memory","Eliminate peer communication","Provide indexing or discovery while peers exchange data"],"answer":3,"explanation":"Provide indexing or discovery while peers exchange data. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH3-Q007","chapter":3,"chapterTitle":"Architecture Models","topic":"Tiering","page":"46","difficulty":"Easy","type":"mcq","question":"What does tiering organize?","options":["Peer IDs in a ring","Clock strata","Functional roles deployed across distinct tiers","Only abstraction levels"],"answer":2,"explanation":"Functional roles deployed across distinct tiers. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH3-Q008","chapter":3,"chapterTitle":"Architecture Models","topic":"Layering","page":"46","difficulty":"Medium","type":"mcq","question":"What does layering organize?","options":["Cache entries by age","Logical abstraction levels built on lower services","Only geographic regions","A master and workers"],"answer":1,"explanation":"Logical abstraction levels built on lower services. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+
+{"id":"CH4-Q001","chapter":4,"chapterTitle":"Naming Systems","topic":"Names and Addresses","page":"52","difficulty":"Easy","type":"mcq","question":"How does a name differ from an address?","options":["A name is always numeric","They are always identical","An address never changes","A name identifies an entity; an address describes where it can be reached"],"answer":3,"explanation":"A name identifies an entity; an address describes where it can be reached. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH4-Q002","chapter":4,"chapterTitle":"Naming Systems","topic":"Name Resolution","page":"52–53","difficulty":"Medium","type":"mcq","question":"What is name resolution?","options":["Replicating a file","Electing a server","Translating a name into a usable reference or address","Converting a clock"],"answer":2,"explanation":"Translating a name into a usable reference or address. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH4-Q003","chapter":4,"chapterTitle":"Naming Systems","topic":"Flat Naming","page":"54","difficulty":"Hard","type":"mcq","question":"What characterizes a flat name?","options":["It must be human-readable","It is unique but contains no structural or location information","It is always a file path","It embeds every route"],"answer":1,"explanation":"It is unique but contains no structural or location information. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH4-Q004","chapter":4,"chapterTitle":"Naming Systems","topic":"Broadcast Resolution","page":"54","difficulty":"Easy","type":"mcq","question":"What is the scalability problem with broadcast resolution?","options":["Queries generate high traffic by reaching all nodes","It requires a DHT","It cannot find entities","It always creates pointer chains"],"answer":0,"explanation":"Queries generate high traffic by reaching all nodes. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH4-Q005","chapter":4,"chapterTitle":"Naming Systems","topic":"Forwarding Pointers","page":"55","difficulty":"Medium","type":"mcq","question":"What problem can forwarding pointers create?","options":["Loss of all mobility","A mandatory global clock","Inability to move entities","Long chains that increase resolution cost"],"answer":3,"explanation":"Long chains that increase resolution cost. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH4-Q006","chapter":4,"chapterTitle":"Naming Systems","topic":"Home-Based Resolution","page":"55–57","difficulty":"Hard","type":"mcq","question":"What does a home node maintain for a mobile entity?","options":["Its vector clock only","Every cached page","Its current foreign address","Its shared memory"],"answer":2,"explanation":"Its current foreign address. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH4-Q007","chapter":4,"chapterTitle":"Naming Systems","topic":"Chord","page":"57–60","difficulty":"Easy","type":"mcq","question":"What is Chord lookup complexity with finger tables?","options":["O(2ⁿ) hops","O(log n) hops","O(n²) hops","O(1) broadcast to all nodes"],"answer":1,"explanation":"O(log n) hops. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH4-Q008","chapter":4,"chapterTitle":"Naming Systems","topic":"Structured Naming","page":"62","difficulty":"Medium","type":"mcq","question":"What is a structured name?","options":["A hierarchical name made of contextual segments","An opaque UUID only","A clock value","A replication factor"],"answer":0,"explanation":"A hierarchical name made of contextual segments. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+
+{"id":"CH5-Q001","chapter":5,"chapterTitle":"Synchronization","topic":"Clock Skew","page":"72","difficulty":"Easy","type":"mcq","question":"What is clock skew?","options":["A message-ordering protocol","A cache lifetime","The difference between two clocks at a given moment","A clock's rate error"],"answer":2,"explanation":"The difference between two clocks at a given moment. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH5-Q002","chapter":5,"chapterTitle":"Synchronization","topic":"Cristian Algorithm","page":"72","difficulty":"Medium","type":"mcq","question":"How does Cristian's algorithm estimate client time?","options":["Client time minus the full RTT","Server time plus about half the round-trip time","Average of all clocks only","Highest Lamport time"],"answer":1,"explanation":"Server time plus about half the round-trip time. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH5-Q003","chapter":5,"chapterTitle":"Synchronization","topic":"Berkeley Algorithm","page":"73","difficulty":"Hard","type":"mcq","question":"What does the Berkeley master send after averaging clocks?","options":["An adjustment value to each node","One external GPS value","A vector timestamp","A token"],"answer":0,"explanation":"An adjustment value to each node. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH5-Q004","chapter":5,"chapterTitle":"Synchronization","topic":"NTP","page":"73","difficulty":"Easy","type":"mcq","question":"How are NTP time sources organized?","options":["Only in one P2P ring","By cache order","By transaction votes","In hierarchical strata"],"answer":3,"explanation":"In hierarchical strata. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH5-Q005","chapter":5,"chapterTitle":"Synchronization","topic":"Lamport Clock","page":"74","difficulty":"Medium","type":"mcq","question":"How is a Lamport clock updated on receiving timestamp Tm?","options":["C = Tm","C is unchanged","C = max(C, Tm) + 1","C = C - Tm"],"answer":2,"explanation":"C = max(C, Tm) + 1. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH5-Q006","chapter":5,"chapterTitle":"Synchronization","topic":"Vector Clocks","page":"74–75","difficulty":"Hard","type":"mcq","question":"When are vector-clocked events concurrent?","options":["Physical times match","Neither vector is smaller than the other component-wise","The vectors are identical","One is smaller in every component"],"answer":1,"explanation":"Neither vector is smaller than the other component-wise. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH5-Q007","chapter":5,"chapterTitle":"Synchronization","topic":"Mutual Exclusion","page":"76–77","difficulty":"Easy","type":"mcq","question":"What is the main weakness of centralized mutual exclusion?","options":["The coordinator is a bottleneck and single point of failure","It needs no messages","It cannot grant access","It requires a token ring"],"answer":0,"explanation":"The coordinator is a bottleneck and single point of failure. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH5-Q008","chapter":5,"chapterTitle":"Synchronization","topic":"Bully Election","page":"79–80","difficulty":"Medium","type":"mcq","question":"Which process wins a Bully election?","options":["The lowest ID","A random process","The first process in a ring","The active process with the highest ID"],"answer":3,"explanation":"The active process with the highest ID. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+
+{"id":"CH6-Q001","chapter":6,"chapterTitle":"Replication & Caching","topic":"Caching","page":"85","difficulty":"Easy","type":"mcq","question":"What is a principal benefit of caching?","options":["A cache policy","Automatic consensus","Reduced latency, bandwidth use, and backend load","Guaranteed durability"],"answer":2,"explanation":"Reduced latency, bandwidth use, and backend load. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH6-Q002","chapter":6,"chapterTitle":"Replication & Caching","topic":"Push Fetching","page":"86–87","difficulty":"Medium","type":"mcq","question":"What distinguishes push-based fetching?","options":["The server proactively sends updates to caches","Clients fetch only on demand","Caches never update","The server tracks no clients"],"answer":0,"explanation":"The server proactively sends updates to caches. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH6-Q003","chapter":6,"chapterTitle":"Replication & Caching","topic":"Pull Fetching","page":"86–87","difficulty":"Hard","type":"mcq","question":"What is a risk of pull-based fetching?","options":["The server tracks every cache","Every update is broadcast","It cannot reduce traffic","Clients may use stale data"],"answer":3,"explanation":"Clients may use stale data. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH6-Q004","chapter":6,"chapterTitle":"Replication & Caching","topic":"Strong Consistency","page":"87–88","difficulty":"Easy","type":"mcq","question":"What does strong cache consistency guarantee?","options":["Only one client reads","Updates never propagate","Every read returns the most recent write","Copies may stay stale forever"],"answer":2,"explanation":"Every read returns the most recent write. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH6-Q005","chapter":6,"chapterTitle":"Replication & Caching","topic":"Eventual Consistency","page":"88","difficulty":"Medium","type":"mcq","question":"What does eventual consistency allow?","options":["One shared copy","Temporary divergence followed by convergence","Instant agreement","No conflict handling"],"answer":1,"explanation":"Temporary divergence followed by convergence. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH6-Q006","chapter":6,"chapterTitle":"Replication & Caching","topic":"Leases","page":"91–92","difficulty":"Hard","type":"mcq","question":"What does a cache lease provide?","options":["Use without revalidation for a fixed duration","Permanent strong consistency","A global clock","An eviction count"],"answer":0,"explanation":"Use without revalidation for a fixed duration. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH6-Q007","chapter":6,"chapterTitle":"Replication & Caching","topic":"LRU","page":"95","difficulty":"Easy","type":"mcq","question":"Which item does LRU evict?","options":["The least frequent item","The first inserted item","A random item","The item not accessed for the longest time"],"answer":3,"explanation":"The item not accessed for the longest time. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH6-Q008","chapter":6,"chapterTitle":"Replication & Caching","topic":"Causal Ordering","page":"102–103","difficulty":"Medium","type":"mcq","question":"What does causal ordering guarantee?","options":["Physical clocks agree","Only alphabetical order is kept","Causally related messages are delivered in dependency order","All concurrent messages have one order"],"answer":2,"explanation":"Causally related messages are delivered in dependency order. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+
+{"id":"CH7-Q001","chapter":7,"chapterTitle":"Fault Tolerance","topic":"Fault Tolerance","page":"109","difficulty":"Easy","type":"mcq","question":"What is fault tolerance?","options":["Continuing correct operation when some components fail","Preventing every fault","Using one reliable server","Removing networking"],"answer":0,"explanation":"Continuing correct operation when some components fail. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH7-Q002","chapter":7,"chapterTitle":"Fault Tolerance","topic":"Failure","page":"110","difficulty":"Medium","type":"mcq","question":"What is a failure?","options":["Any latency increase only","A successful retry","A TCP message","A deviation from specified system behavior"],"answer":3,"explanation":"A deviation from specified system behavior. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH7-Q003","chapter":7,"chapterTitle":"Fault Tolerance","topic":"Transient Failure","page":"110","difficulty":"Hard","type":"mcq","question":"What is often suitable for a transient failure?","options":["Retry forever","Disable redundancy","A bounded retry with exponential backoff","Permanent replacement only"],"answer":2,"explanation":"A bounded retry with exponential backoff. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH7-Q004","chapter":7,"chapterTitle":"Fault Tolerance","topic":"Persistent Failure","page":"110","difficulty":"Easy","type":"mcq","question":"What is commonly needed for a persistent failure?","options":["Cache eviction","Repair, replacement, or failover","Unlimited retry","A timestamp only"],"answer":1,"explanation":"Repair, replacement, or failover. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH7-Q005","chapter":7,"chapterTitle":"Fault Tolerance","topic":"Availability","page":"110–111","difficulty":"Medium","type":"mcq","question":"Which formula gives availability?","options":["MTTF / (MTTF + MTTR)","MTTR / MTTF","MTTF × MTTR","1 / MTTF"],"answer":0,"explanation":"MTTF / (MTTF + MTTR). This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH7-Q006","chapter":7,"chapterTitle":"Fault Tolerance","topic":"Failure Detection","page":"111","difficulty":"Hard","type":"mcq","question":"What are heartbeats used for?","options":["Guaranteeing network health","Synchronizing caches","Electing the highest ID directly","Detecting potentially unresponsive components"],"answer":3,"explanation":"Detecting potentially unresponsive components. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH7-Q007","chapter":7,"chapterTitle":"Fault Tolerance","topic":"Two-Phase Commit","page":"112","difficulty":"Easy","type":"mcq","question":"When does a 2PC coordinator choose GLOBAL_COMMIT?","options":["After one COMMIT","Without replies","When every participant votes COMMIT","When a majority commits"],"answer":2,"explanation":"When every participant votes COMMIT. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"},
+{"id":"CH7-Q008","chapter":7,"chapterTitle":"Fault Tolerance","topic":"Two-Phase Commit","page":"114–115","difficulty":"Medium","type":"mcq","question":"What is a central limitation of 2PC?","options":["It tolerates Byzantine failure","READY participants may block if the coordinator fails","It cannot abort","It uses no messages"],"answer":1,"explanation":"READY participants may block if the coordinator fails. This is the concept presented in the cited ebook section.","source":"Distributed_ebook_2025a.pdf"}
 ]
