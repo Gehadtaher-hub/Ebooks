@@ -7,15 +7,15 @@
     "page": "9–10",
     "difficulty": "Easy",
     "type": "mcq",
-    "question": "Which statement best defines a distributed system?",
+    "question": "Which description best defines a distributed system?",
     "options": [
-      "A single computer with multiple processor cores",
-      "A group of independent computers that communicate and coordinate toward a common goal",
-      "A collection of computers that never exchange messages",
-      "A database stored on one server"
+      "Computers that never communicate",
+      "One database on one server",
+      "Independent computers communicating and coordinating toward a common goal",
+      "One multicore computer"
     ],
-    "answer": 1,
-    "explanation": "A distributed system consists of independent computers that communicate over a network, share resources or data, and coordinate toward a common goal.",
+    "answer": 2,
+    "explanation": "Independent computers communicating and coordinating toward a common goal. This is the concept presented in the cited ebook section.",
     "source": "Distributed_ebook_2025a.pdf"
   },
   {
@@ -24,86 +24,134 @@
     "chapterTitle": "Introduction to Distributed Systems",
     "topic": "Vertical Scaling",
     "page": "12",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "type": "mcq",
-    "question": "Which action is an example of vertical scaling?",
+    "question": "Which change is vertical scaling?",
     "options": [
-      "Adding more application servers",
-      "Adding RAM and CPU capacity to one server",
-      "Distributing data among several regions",
-      "Creating several database replicas"
+      "Adding a load balancer",
+      "Adding CPU and RAM to one server",
+      "Adding four servers",
+      "Replicating data across regions"
     ],
     "answer": 1,
-    "explanation": "Vertical scaling, or scaling up, increases the resources of one machine.",
+    "explanation": "Adding CPU and RAM to one server. This is the concept presented in the cited ebook section.",
     "source": "Distributed_ebook_2025a.pdf"
   },
   {
     "id": "CH1-Q003",
     "chapter": 1,
     "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Horizontal Scaling",
+    "topic": "Vertical Scaling",
     "page": "12",
-    "difficulty": "Easy",
+    "difficulty": "Hard",
     "type": "mcq",
-    "question": "What is the main idea of horizontal scaling?",
+    "question": "What is a main limitation of vertical scaling?",
     "options": [
-      "Increasing the capacity of one machine",
-      "Adding machines and distributing workload among them",
-      "Removing load balancing",
-      "Using one shared physical memory"
+      "A physical ceiling and a possible single point of failure",
+      "It always requires partitioning",
+      "It prevents hardware upgrades",
+      "It guarantees availability"
     ],
-    "answer": 1,
-    "explanation": "Horizontal scaling adds machines and distributes traffic or data among those machines.",
+    "answer": 0,
+    "explanation": "A physical ceiling and a possible single point of failure. This is the concept presented in the cited ebook section.",
     "source": "Distributed_ebook_2025a.pdf"
   },
   {
     "id": "CH1-Q004",
     "chapter": 1,
     "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Core Features",
-    "page": "13",
-    "difficulty": "Medium",
+    "topic": "Horizontal Scaling",
+    "page": "12",
+    "difficulty": "Easy",
     "type": "mcq",
-    "question": "Why do nodes in a distributed system use message passing?",
+    "question": "What is horizontal scaling?",
     "options": [
-      "The nodes have independent physical memory",
-      "Every node shares all variables directly",
-      "Messages create a perfect global clock",
-      "Message passing prevents every failure"
+      "Increasing one CPU's speed",
+      "Using shared physical memory",
+      "Removing replicas",
+      "Adding machines and distributing workload among them"
     ],
-    "answer": 0,
-    "explanation": "Each node has local memory, so nodes coordinate by exchanging messages.",
+    "answer": 3,
+    "explanation": "Adding machines and distributing workload among them. This is the concept presented in the cited ebook section.",
     "source": "Distributed_ebook_2025a.pdf"
   },
   {
     "id": "CH1-Q005",
     "chapter": 1,
     "chapterTitle": "Introduction to Distributed Systems",
-    "topic": "Physical Clocks",
+    "topic": "Core Features",
     "page": "13",
     "difficulty": "Medium",
     "type": "mcq",
-    "question": "What problem follows from the absence of a common physical clock?",
+    "question": "Why do distributed nodes use message passing?",
     "options": [
-      "Every node stops processing",
-      "Ordering and synchronizing events becomes difficult",
-      "All memory becomes shared",
-      "Geographical separation is eliminated"
+      "Messages prevent failures",
+      "Each node has independent physical memory",
+      "Every node shares all variables",
+      "Messages create a global clock"
     ],
     "answer": 1,
-    "explanation": "Local clocks may drift, and network delay makes exact global event ordering difficult.",
+    "explanation": "Each node has independent physical memory. This is the concept presented in the cited ebook section.",
     "source": "Distributed_ebook_2025a.pdf"
   },
   {
     "id": "CH1-Q006",
     "chapter": 1,
     "chapterTitle": "Introduction to Distributed Systems",
+    "topic": "Physical Clocks",
+    "page": "13",
+    "difficulty": "Hard",
+    "type": "mcq",
+    "question": "Why is event ordering difficult in a distributed system?",
+    "options": [
+      "Memory is always shared",
+      "Messages arrive instantly",
+      "Local clocks drift and network delay varies",
+      "Every node uses one hardware clock"
+    ],
+    "answer": 2,
+    "explanation": "Local clocks drift and network delay varies. This is the concept presented in the cited ebook section.",
+    "source": "Distributed_ebook_2025a.pdf"
+  },
+  {
+    "id": "CH1-Q007",
+    "chapter": 1,
+    "chapterTitle": "Introduction to Distributed Systems",
+    "topic": "Parallel vs Distributed",
+    "page": "14–15",
+    "difficulty": "Easy",
+    "type": "mcq",
+    "question": "Which feature is typical of a distributed system?",
+    "options": [
+      "Independent memory connected through network messages",
+      "One shared physical memory only",
+      "One global hardware clock",
+      "All processors in one machine"
+    ],
+    "answer": 0,
+    "explanation": "Independent memory connected through network messages. This is the concept presented in the cited ebook section.",
+    "source": "Distributed_ebook_2025a.pdf"
+  },
+  {
+    "id": "CH1-Q008",
+    "chapter": 1,
+    "chapterTitle": "Introduction to Distributed Systems",
     "topic": "Netflix Case Study",
     "page": "16",
     "difficulty": "Medium",
     "type": "mcq",
-    "question": "How does Netflix reduce video playback latency?",
+    "question": "How does Netflix reduce playback latency?",
     "options": [
+      "It uses one worldwide server",
+      "It removes replicas",
+      "It waits for every service before playback",
+      "It serves content from a nearby location"
+    ],
+    "answer": 3,
+    "explanation": "It serves content from a nearby location. This is the concept presented in the cited ebook section.",
+    "source": "Distributed_ebook_2025a.pdf"
+  }
+]
       "By serving all viewers from one worldwide server",
       "By removing all content replicas",
       "By serving content from a nearby location",
