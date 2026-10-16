@@ -9,7 +9,7 @@
 <article class="lecture-card ebook" data-lecture="2" data-kind="ebook" data-search="communication in distributed systems processes, messaging, sockets, rpc, middleware, and communication behavior. communication">
   <div class="card-top"><span class="number">02</span><span class="tag">Communication</span></div>
   <h2>Lecture 2</h2><h3>Communication in Distributed Systems</h3><p>Processes, messaging, sockets, RPC, middleware, and communication behavior.</p>
-  <div class="card-actions"><a class="open" href="lecture2.html">Open Lecture 2</a><button class="open presentation-btn" type="button" onclick="openPresentation(2)">Presentation</button><button class="reset" data-key="lecture2CompleteCompanion" aria-label="Reset saved progress for Lecture 2">Reset progress</button></div>
+  <div class="card-actions"><a class="open" href="lecture2.html">Open Lecture 2</a><button class="open presentation-btn" type="button" onclick="openPresentation('2-part1')">Presentation Part I</button><button class="open presentation-btn" type="button" onclick="openPresentation('2-part2')">Presentation Part II</button><button class="reset" data-key="lecture2CompleteCompanion" aria-label="Reset saved progress for Lecture 2">Reset progress</button></div>
   <div class="progress-row"><span>Saved progress</span><strong id="progress-2">Not started</strong></div>
 </article>
 <article class="lecture-card ebook" data-lecture="3" data-kind="ebook" data-search="architecture models master–worker, peer-to-peer models, tiering, layering, and architectural trade-offs. architecture">
@@ -49,13 +49,14 @@
   <div class="progress-row"><span>Saved progress</span><strong id="progress-8">Not started</strong></div>
 </article></section><div class="empty" id="empty">No lectures match the current search or filter.</div></main><div class="presentation-modal" id="presentationModal" role="dialog" aria-modal="true" aria-labelledby="presentationTitle" onclick="if(event.target===this)closePresentation()"><div class="presentation-shell"><div class="presentation-head"><h2 id="presentationTitle">Lecture Presentation</h2><button class="presentation-close" type="button" onclick="closePresentation()">Close</button></div><div class="presentation-viewer" id="presentationViewer"></div></div></div><footer>Distributed Systems Learning Studio · Lectures 1–8</footer><script>
 // Paste each Google Slides pubembed URL between the quotation marks below.
-const PRESENTATION_URLS={1:'https://docs.google.com/presentation/d/e/2PACX-1vRn6AzCu5Bg-qt4xYHtREokMkCkoErXsEzqNA41s1Ns4Ly27ilccgvuEYntZ0N-rhisua2wSzCAMxKu/pubembed?start=false&loop=false&delayms=3000',2:'https://docs.google.com/presentation/d/e/2PACX-1vSD1sZtDZHxe_D8dZG--LguiRTxjBIo9cwdMtjO4roIfbqspPEP5MDqb9_kKHXGC-fR6vj5TdSCi9QH/pubembed?start=false&loop=false&delayms=3000',3:'',4:'',5:'',6:'',7:'',8:''};
+const PRESENTATION_URLS={1:'https://docs.google.com/presentation/d/e/2PACX-1vRn6AzCu5Bg-qt4xYHtREokMkCkoErXsEzqNA41s1Ns4Ly27ilccgvuEYntZ0N-rhisua2wSzCAMxKu/pubembed?start=false&loop=false&delayms=3000','2-part1':'https://docs.google.com/presentation/d/e/2PACX-1vSD1sZtDZHxe_D8dZG--LguiRTxjBIo9cwdMtjO4roIfbqspPEP5MDqb9_kKHXGC-fR6vj5TdSCi9QH/pubembed?start=false&loop=false&delayms=3000','2-part2':'https://docs.google.com/presentation/d/e/2PACX-1vTvrqUk6-18tqAbsj6sr3gPtTr1D4f_CuY2l-6c71mPyNqaH2UmXLtAhSILyhJFTFfO9z6bv5BrFXKs/pubembed?start=false&loop=false&delayms=3000',3:'',4:'',5:'',6:'',7:'',8:''};
 function openPresentation(n){
   const modal=document.getElementById('presentationModal');
   const viewer=document.getElementById('presentationViewer');
-  document.getElementById('presentationTitle').textContent=`Lecture ${n} Presentation`;
+  const title=n==='2-part1'?'Lecture 2 Presentation — Part I':n==='2-part2'?'Lecture 2 Presentation — Part II':`Lecture ${n} Presentation`;
+  document.getElementById('presentationTitle').textContent=title;
   const url=PRESENTATION_URLS[n];
-  viewer.innerHTML=url?`<iframe src="${url}" title="Lecture ${n} Presentation" allowfullscreen loading="eager"></iframe>`:`<div class="presentation-placeholder">Presentation button is ready. Add the Lecture ${n} embed URL in <code>PRESENTATION_URLS[${n}]</code>.</div>`;
+  viewer.innerHTML=url?`<iframe src="${url}" title="${title}" allowfullscreen loading="eager"></iframe>`:`<div class="presentation-placeholder">Presentation button is ready. Add its embed URL in <code>PRESENTATION_URLS</code>.</div>`;
   modal.classList.add('open');document.body.classList.add('presentation-opened');
 }
 function closePresentation(){document.getElementById('presentationModal').classList.remove('open');document.getElementById('presentationViewer').innerHTML='';document.body.classList.remove('presentation-opened')}
